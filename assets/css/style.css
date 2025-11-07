@@ -318,8 +318,8 @@ body {
 }
 
 .profile-img {
-  width: 200px; /*300 px si es ilustración y 250px si es foto, decidir*/
-  height: 200px;
+  width: 300px; /*300 px si es ilustración y 250px si es foto, decidir*/
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
   border: 6px solid #420053;
