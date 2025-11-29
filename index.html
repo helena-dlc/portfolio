@@ -3,85 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hele De.V | Frontend & Data Visualization</title>
-    
-    <!-- Fuentes -->
+    <title>Helena De La Cruz - Data Analytics Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-   <!-- nueva-->
-<link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- AOS CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-
-    <!-- Estilos CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+</head>
 <body>
     <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-container">
-                <a href="#home" class="logo">{Helena De.V}</a>
-                <ul class="nav-menu">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <button class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                Helena
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-   
-<!-- HERO SECTION -->
-<section class="hero" id="home">
-    <div class="hero-container" data-aos="zoom-in" data-aos-duration="1000">
-        <div class="hero-content">
-            <h1>Helena De La Cruz Vergara</h1>
-            <p class="hero-subtitle">Data Visualization | Frontend and UI</p>
-            <a href="#about" class="btn">Conoce más</a>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="grid-overlay"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
         </div>
         
-        <div class="hero-animation-container">
-            <img src="assets/img/laptop2.gif" alt="Animación Helena" class="hero-gif">
+        <div class="container hero-container">
+            <div class="hero-content" data-aos="fade-right">
+                <p class="hero-greeting">Hola, soy</p>
+                <h1 class="hero-title">Helena De La Cruz</h1>
+                <div class="typing-wrapper">
+                    <p class="hero-subtitle"></p>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Transformo datos complejos en insights accionables mediante visualizaciones inteligentes y análisis estratégico.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Ver Proyectos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Contactar</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Proyectos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Tecnologías</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Dedicación</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="fade-left">
+                <div class="floating-card card-1">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Analytics</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-database"></i>
+                    <span>Big Data</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="hero-image-container">
+                    <img src="assets/img/Me3.png" alt="Helena De La Cruz" class="profile-hero-img">
+                    <div class="image-glow"></div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- Agregar después del gif -->
-
-</section>
+    </section>
 
     <!-- ABOUT SECTION -->
-    <section class="section about" id="about">
+    <section id="about" class="section about">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">About me</h2>
+            <h2 class="section-title" data-aos="fade-up">Sobre Mí</h2>
             <div class="about-content">
-                <img src="assets/img/Me.png" 
-                     alt="Helena De La Cruz" class="profile-img" data-aos="fade-right" data-aos-duration="1000">
-                <div data-aos="fade-left" data-aos-duration="1000">
-                    <p class="about-text">
-                    Business Engineering final year student  and Digital Designer passionate about transforming complex data into clear, actionable insights through intuitive design.
-I specialize in creating visually compelling interfaces and data visualizations that drive strategic decision-making. With hands-on experience in UI/UX design, illustration, and analytics tools, I deliver digital solutions that seamlessly blend functionality with aesthetic appeal..
+                <div class="about-text" data-aos="fade-up">
+                    <p class="about-intro">
+                        Soy <strong>Analista de Inteligencia Comercial</strong> y estudiante de último año de Ingeniería Comercial ,especializada en transformar datos en decisiones estratégicas. Mi enfoque combina análisis riguroso con visualizaciones que cuentan historias claras y accionables.
                     </p>
-                    <p class="about-text">
-                        Whether you need dashboard design, data visualization, or user interface development, I bring both technical understanding and creative vision to make your data tell a powerful story
-                    <div>
-                        <a href="https://drive.google.com/file/d/1pYVBephUhbZRKF5izMPru9yW1BswLaef/view?usp=sharing" class="btn-primary" download>
-                            <i class="fas fa-download"></i> CV Español
+                    <p>
+                        Con experiencia en <strong>Análisis de Datos y Automatizaciones en Appscript</strong>, desarrollo dashboards interactivos y análisis predictivos que impulsan el crecimiento empresarial. Mi formación en diseño me permite crear interfaces intuitivas que hacen los datos accesibles para todos.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Formación</h4>
+                                <p>Ingeniería Comercial | Universidad de Concepción</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <h4>Experiencia</h4>
+                                <p>Pasante Analista de intelgencia Comercial y Operaciones @ Geperex</p>
+                                 <p>Practicante Analista de Datos Económicos @INE</p>
+                                 <p>Diseñadora | Ilustradora y WebManager @Freelance</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Concepción, Chile</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Trabajemos Juntos</span>
                         </a>
-                        <a href="https://drive.google.com/file/d/1Yefs6mOPVjB77EUszQ4RfDZM-JsWBfMS/view?usp=sharing" class="btn-secondary" download>
-                            <i class="fas fa-download"></i> CV English
+                        <a href="#" class="btn btn-outline">
+                            <span>CV Español</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline">
+                            <span>CV English</span>
+                            <i class="fas fa-download"></i>
                         </a>
                     </div>
                 </div>
@@ -89,252 +155,494 @@ I specialize in creating visually compelling interfaces and data visualizations 
         </div>
     </section>
 
-<!-- Skills section en scroll -->
-<section class="section" id="skills">
-    <div class="container">
-        <h2 class="section-title" data-aos="fade-up">Skills and Tools</h2>
-        
-        <div class="skills-scroll-wrapper" id="skillsScroll">
-            <div class="skills-scroll-container" id="skillsContainer">
-                <div class="skill-item">
-                    <i class="fab fa-html5"></i>
-                    <h4>HTML5</h4>
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Stack Tecnológico</h2>
+            <p class="section-subtitle" data-aos="fade-up">Herramientas y tecnologías que domino</p>
+            
+            <div class="skills-categories">
+                <!-- Data Analytics & BI -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Data Analytics & BI</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <span class="skill-name">Pandas & NumPy</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span class="skill-name">SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-table"></i>
+                            </div>
+                            <span class="skill-name">Excel Avanzado</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <span class="skill-name">Looker Studio</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <span class="skill-name">Machine Learning</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-item">
-                    <i class="fab fa-css3-alt"></i>
-                    <h4>CSS3</h4>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-js"></i>
-                    <h4>JavaScript</h4>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-react"></i>
-                    <h4>React</h4>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-vuejs"></i>
-                    <h4>Vue.js</h4>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-database"></i>
-                    <h4>Databases</h4>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-chart-line"></i>
-                    <h4>Analytics</h4>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-figma"></i>
-                    <h4>Figma</h4>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-git-alt"></i>
-                    <h4>Git</h4>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-python"></i>
-                    <h4>Python</h4>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-bootstrap"></i>
-                    <h4>Bootstrap</h4>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-r-project"></i>
-                    <h4>R Studio</h4>
+
+                <!-- Development & Design -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Development & Design</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <span class="skill-name">React</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <span class="skill-name">HTML/CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <span class="skill-name">Figma</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <span class="skill-name">Firebase</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <span class="skill-name">Git</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- PROJECTS SECTION -->
-
-            <section class="section-projects" id="projects"> 
+    <section id="projects" class="section projects">
         <div class="container">
-            <h2 class="section-title-project" data-aos="fade-up">Projects</h2>
-            <!-- Acá pueden ir unos h3 o botones dividiendo por categoría, pero veremos...-->
-           
+            <h2 class="section-title" data-aos="fade-up">Portafolio de Proyectos</h2>
+            <p class="section-subtitle" data-aos="fade-up">Casos de estudio y soluciones desarrolladas</p>
 
-            <div class="projects-grid">
-                <!--Dashboard de ventas en Python -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100" id="project1">
-                    <img src="assets/img/dashboard2-py.png" alt="Dashboard Analytics" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">Interactive Sales Dashboard (PY)</h3>
-                            <div class="project-tech">
-                        <span class="tech-tag">Data Analytics</span>
-                        <span class="tech-tag">Data Visualization</span>
-                       
-                    </div>
-                        <p class="project-description">Complete data analysis system with interactive visualizations developed with Python and Streamlit.</p>
-                      
-                        <div class="project-links">
-                            <a href="https://dashboardventas1.streamlit.app/" class="project-btn btn-demo">Demo</a>
-                            <a href="#" class="project-btn btn-github">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Dashboard Looker Studio-->
-                 <div class="project-card" data-aos="fade-up" data-aos-delay="200" id="project2">
-                    <img src="assets/img/dashboard1-ls.png" alt="dashboard-lk" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">Interactive Sales Dashboard Looker Studio</h3>
-                            <div class="project-tech">
-                        <span class="tech-tag">Data Visualization</span>
-    
-                       
-                    </div>
-                        <p class="project-description">Dashboard with sales and shipping data. Filters by region, product, and key KPIs.</p>
-                        <div class="project-links">
-                            <a href="https://lookerstudio.google.com/reporting/34ba0ad5-394e-4ff3-8c96-49f47349567c" class="project-btn btn-demo">Ver Demo</a>
-                            <a href="" class="project-btn btn-github">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <!--Admin Panel-->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200" id="project3">
-                    <img src="assets/img/admin-panel.png" alt="admin-panel" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">Responsive Admin panel </h3>
-                            <div class="project-tech">
-                        <span class="tech-tag">Frontend</span>
-    
-                       
-                    </div>
-                        <p class="project-description">Dashboards and admin panel oriented to web platforms. CSS, HTML, JavaScript.</p>
-                        <div class="project-links">
-                            <a href="https://helena-dlc.github.io/admin-dashboard/" class="project-btn btn-demo"> Demo</a>
-                            <a href="https://github.com/helena-dlc/admin-dashboard" class="project-btn btn-github">GitHub</a>
-                        </div>
-                    </div>
-                </div>
+            <!-- PROJECT TABS -->
+            <div class="project-tabs" data-aos="fade-up">
+                <button class="tab-btn active" data-tab="bi">
+                    <i class="fas fa-chart-line"></i>
+                    Business Intelligence
+                </button>
+                <button class="tab-btn" data-tab="dev">
+                    <i class="fas fa-code"></i>
+                    UI/UX & Frontend
+                </button>
+            </div>
 
-                <!--Kanban To-Do Board-->
+            <!-- BI PROJECTS -->
+            <div class="tab-content active" id="bi">
+                <div class="projects-showcase">
+                    <!-- Project 1: Bank Churn - Featured -->
+                    <article class="project-featured" data-aos="fade-up">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" alt="Bank Customer Churn Prediction" class="project-img">
+                            <div class="project-overlay">
+                                <span class="project-tag featured">Destacado</span>
+                                <span class="project-tag">Machine Learning</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">
+                                    <i class="fas fa-brain"></i> Predictive Analytics
+                                </span>
+                                <span class="project-date">2025</span>
+                            </div>
+                            <h3 class="project-title">Bank Customer Churn Prediction</h3>
+                            <p class="project-description">
+                                Modelo predictivo de abandono de clientes bancarios utilizando algoritmos de Machine Learning. Análisis exploratorio completo, feature engineering y evaluación de múltiples modelos alcanzando 87% de accuracy.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Scikit-learn</span>
+                                <span class="tech-badge">Pandas</span>
+                                <span class="tech-badge">Seaborn</span>
+                                <span class="tech-badge">XGBoost</span>
+                            </div>
+                            <div class="project-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">87%</span>
+                                    <span class="metric-label">Accuracy</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">10K+</span>
+                                    <span class="metric-label">Registros</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">15+</span>
+                                    <span class="metric-label">Features</span>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/helena-dlc/Bank-customer-churn-prediction" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Ver Demo
+                                </a>
+                                <a href="#" class="btn btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    Código
+                                </a>
+                            </div>
+                        </div>
+                    </article>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200" id="project4">
-                    <img src="assets/img/kanban-todo-board.png" alt="kanban-todo-board" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">Kanban To-Do Board</h3>
-                            <div class="project-tech">
-                        <span class="tech-tag">Frontend</span>
-    
-                       
-                    </div>
-                        <p class="project-description">Task manager with dual drag-and-drop functionality and action buttons. Priority tagging and counter system.</p>
-                        <div class="project-links">
-                            <a href="https://helena-dlc.github.io/kanban-todo-board/" class="project-btn btn-demo">Ver Demo</a>
-                            <a href="https://github.com/helena-dlc/kanban-todo-board" class="project-btn btn-github">GitHub</a>
+                    <!-- Otros proyectos en carrusel -->
+                    <div class="projects-carousel-section" data-aos="fade-up">
+                        <div class="carousel-header">
+                            <h3 class="carousel-title">Más Proyectos de Business Intelligence</h3>
+                            <div class="carousel-controls">
+                                <button class="carousel-btn carousel-prev" data-carousel="bi-carousel">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-btn carousel-next" data-carousel="bi-carousel">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="projects-carousel" id="bi-carousel">
+                            <div class="carousel-track">
+                                <!-- Project 2: Investment Evaluator -->
+                                <article class="project-card">
+                                    <div class="project-card-image">
+                                        <img src="assets/img/vantir.png" alt="Evaluador de Proyectos">
+                                        <div class="card-overlay">
+                                            <span class="project-tag">Financial Analysis</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-card-content">
+                                        <div class="project-meta">
+                                            <span class="project-category">
+                                                <i class="fas fa-calculator"></i> Financial Analytics
+                                            </span>
+                                        </div>
+                                        <h3 class="project-title">Evaluador de Proyectos de Inversión</h3>
+                                        <p class="project-description">
+                                            Aplicación web interactiva para evaluación financiera de proyectos con VPN, TIR y análisis de sensibilidad.
+                                        </p>
+                                        <div class="project-tech-stack">
+                                            <span class="tech-badge">Python</span>
+                                            <span class="tech-badge">Streamlit</span>
+                                            <span class="tech-badge">NumPy</span>
+                                            <span class="tech-badge">Plotly</span>
+                                        </div>
+                                        <div class="project-actions">
+                                            <a href="https://evaluadordeproyectos.streamlit.app/" class="btn-link">
+                                                Ver Proyecto <i class="fas fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Project 3: Looker Dashboard -->
+                                <article class="project-card">
+                                    <div class="project-card-image">
+                                        <img src="assets/img/dashboard1-ls.png" alt="Dashboard Looker">
+                                        <div class="card-overlay">
+                                            <span class="project-tag">BI Dashboard</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-card-content">
+                                        <div class="project-meta">
+                                            <span class="project-category">
+                                                <i class="fas fa-chart-pie"></i> Business Intelligence
+                                            </span>
+                                        </div>
+                                        <h3 class="project-title">Dashboard de Ventas - Looker Studio</h3>
+                                        <p class="project-description">
+                                            Dashboard interactivo con métricas KPI, análisis temporal y segmentación por producto y región.
+                                        </p>
+                                        <div class="project-tech-stack">
+                                            <span class="tech-badge">Looker Studio</span>
+                                            <span class="tech-badge">Google Sheets</span>
+                                            <span class="tech-badge">SQL</span>
+                                        </div>
+                                        <div class="project-actions">
+                                            <a href="#" class="btn-link">
+                                                Ver Proyecto <i class="fas fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Project 4: Python Dashboard -->
+                                <article class="project-card">
+                                    <div class="project-card-image">
+                                        <img src="assets/img/dashboard2-py.png" alt="Dashboard Python">
+                                        <div class="card-overlay">
+                                            <span class="project-tag">Data Viz</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-card-content">
+                                        <div class="project-meta">
+                                            <span class="project-category">
+                                                <i class="fas fa-chart-line"></i> Data Visualization
+                                            </span>
+                                        </div>
+                                        <h3 class="project-title">Dashboard de Ventas - Python</h3>
+                                        <p class="project-description">
+                                            Dashboard con Streamlit para análisis de ventas con filtros interactivos y gráficos en tiempo real.
+                                        </p>
+                                        <div class="project-tech-stack">
+                                            <span class="tech-badge">Python</span>
+                                            <span class="tech-badge">Streamlit</span>
+                                            <span class="tech-badge">Plotly</span>
+                                            <span class="tech-badge">Pandas</span>
+                                        </div>
+                                        <div class="project-actions">
+                                            <a href="#" class="btn-link">
+                                                Ver Proyecto <i class="fas fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!--Viajes Chile LandingPage-->
+            </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300" id="project5">
-                    <img src="assets/img/viajes-chile3.png" alt="Landing-page1" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">Landing Page Viajes Chile</h3>
-                            <div class="project-tech">
-                        <span class="tech-tag">Frontend</span>
-                         <span class="tech-tag">UI</span>
-                
-                    </div>
-                        <p class="project-description">Development of a responsive landing page for the Viajes Chile agency.
-Bootstrap, JavaScript, HTML5 and CSS3.</p>
-                        <div class="project-links">
-                            <a href="https://helena-dlc.github.io/viajes-chile/" class="project-btn btn-demo">Demo</a>
-                            <a href="#" class="project-btn btn-github">GitHub</a>
+            <!-- DEV PROJECTS -->
+            <div class="tab-content" id="dev">
+                <div class="projects-showcase">
+                    <!-- Featured UI/UX Project -->
+                    <article class="project-featured" data-aos="fade-up">
+                        <div class="project-image-wrapper">
+                            <img src="assets/img/admin-panel.png" alt="Admin Panel">
+                            <div class="project-overlay">
+                                <span class="project-tag featured">Destacado</span>
+                                <span class="project-tag">UI/UX</span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <!-- SuperHero Hunter-->
-                 <div class="project-card" data-aos="fade-up" data-aos-delay="200" id="project6">
-                    <img src="assets/img/superhero-api.png" alt="kanban-todo-board" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">SuperHero Hunter</h3>
-                            <div class="project-tech">
-                        <span class="tech-tag">Frontend</span>
-    
-                       
-                    </div>
-                        <p class="project-description">Interactive page using the SuperHero API. The user can find superheroes by entering a number and get their power statistics. HTML, Bootstrap, JavaScript, canvas.js</p>
-                        <div class="project-links">
-                            <a href="https://helena-dlc.github.io/superhero-api/" class="project-btn btn-demo">Demo</a>
-                            <a href="https://github.com/helena-dlc/superhero-api" class="project-btn btn-github">GitHub</a>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">
+                                    <i class="fas fa-desktop"></i> Web Application
+                                </span>
+                                <span class="project-date">2024</span>
+                            </div>
+                            <h3 class="project-title">Admin Panel Responsive</h3>
+                            <p class="project-description">
+                                Panel de administración moderno con diseño responsive, tema oscuro/claro y gestión de datos en tiempo real. Incluye dashboard con métricas, gestión de usuarios y sistema de notificaciones.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">Tailwind CSS</span>
+                                <span class="tech-badge">Chart.js</span>
+                                <span class="tech-badge">Firebase</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Ver Demo
+                                </a>
+                                <a href="#" class="btn btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    Código
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Otros proyectos en carrusel -->
+                    <div class="projects-carousel-section" data-aos="fade-up">
+                        <div class="carousel-header">
+                            <h3 class="carousel-title">Más Proyectos de UI/UX & Frontend</h3>
+                            <div class="carousel-controls">
+                                <button class="carousel-btn carousel-prev" data-carousel="dev-carousel">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-btn carousel-next" data-carousel="dev-carousel">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="projects-carousel" id="dev-carousel">
+                            <div class="carousel-track">
+                                <!-- Project: Kanban Board -->
+                                <article class="project-card">
+                                    <div class="project-card-image">
+                                        <img src="assets/img/kanban-todo-board.png" alt="Kanban Board">
+                                        <div class="card-overlay">
+                                            <span class="project-tag">Productivity</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-card-content">
+                                        <div class="project-meta">
+                                            <span class="project-category">
+                                                <i class="fas fa-tasks"></i> Task Management
+                                            </span>
+                                        </div>
+                                        <h3 class="project-title">Kanban To-Do Board</h3>
+                                        <p class="project-description">
+                                            Tablero Kanban interactivo con drag & drop, categorización de tareas y sincronización en la nube.
+                                        </p>
+                                        <div class="project-tech-stack">
+                                            <span class="tech-badge">React</span>
+                                            <span class="tech-badge">DnD Kit</span>
+                                            <span class="tech-badge">Firebase</span>
+                                        </div>
+                                        <div class="project-actions">
+                                            <a href="#" class="btn-link">
+                                                Ver Proyecto <i class="fas fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Project: Travel Landing -->
+                                <article class="project-card">
+                                    <div class="project-card-image">
+                                        <img src="assets/img/viajes-chile.png" alt="Landing Page">
+                                        <div class="card-overlay">
+                                            <span class="project-tag">Design</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-card-content">
+                                        <div class="project-meta">
+                                            <span class="project-category">
+                                                <i class="fas fa-plane"></i> Landing Page
+                                            </span>
+                                        </div>
+                                        <h3 class="project-title">Landing Page de Viajes</h3>
+                                        <p class="project-description">
+                                            Landing page moderna para agencia de viajes con animaciones suaves y diseño responsive.
+                                        </p>
+                                        <div class="project-tech-stack">
+                                            <span class="tech-badge">HTML5</span>
+                                            <span class="tech-badge">CSS3</span>
+                                            <span class="tech-badge">JavaScript</span>
+                                            <span class="tech-badge">GSAP</span>
+                                        </div>
+                                        <div class="project-actions">
+                                            <a href="#" class="btn-link">
+                                                Ver Proyecto <i class="fas fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-  
 
     <!-- CONTACT SECTION -->
- <section class="section" id="contact">
-    <div class="container">
-        <h2 class="section-title" data-aos="fade-up">Contact me</h2>
-        <form class="contact-form" id="contact-form" data-aos="fade-up" data-aos-duration="1000" action="https://formspree.io/f/tu-ID-personal-aqui" method="POST">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" class="form-control" required>
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Trabajemos Juntos</h2>
+            <p class="section-subtitle" data-aos="fade-up">¿Tienes un proyecto en mente? Hablemos</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>he.delacruzv@gmail.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Ubicación</h3>
+                        <p>Concepción, Chile</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>/delacruzhelena</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form" data-aos="fade-left">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" class="form-control" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="tu@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subject" class="form-control" placeholder="¿En qué puedo ayudarte?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" class="form-control" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Enviar Mensaje</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" class="form-control" required></textarea>
-            </div>
-            <button type="submit" class="btn-submit">
-                <i class="fas fa-paper-plane"></i> Enviar Mensaje
-            </button>
-        </form>
-    </div>
-</section>
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Helena De La Cruz</h3>
-                    <p>Frontend Developer & Data Visualization Specialist</p>
-                    <div class="location">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Concepción, Chile</span>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Follow me</h3>
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/delacruzhelena" target="_blank" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/helena-dlc" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://behance.net/delacruzhelena" target="_blank" class="social-link">
-                            <i class="fab fa-behance"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Helena De La Cruz Vergara. Todos los derechos reservados.</p>
+                <p>&copy; 2024 Helena De La Cruz. Diseñado y desarrollado con <i class="fas fa-heart"></i></p>
             </div>
         </div>
     </footer>
-    
 
-    <!-- AOS JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-  <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
